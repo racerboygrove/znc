@@ -20,7 +20,7 @@
 
 using std::map;
 
-class CFloodDetachMod : public CModule {
+class CFloodDetachMod : private CModule {
   public:
     MODCONSTRUCTOR(CFloodDetachMod) {
         m_iThresholdSecs = 0;
